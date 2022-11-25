@@ -70,7 +70,7 @@ An AWS Lambda function that automatically updates and manages a managed prefix l
 
 6. Create the managed prefix list.
 
-   Under `VPC`, `Managed prefix lists`, click on `Create prefix list`. Give it an intuitive name such as `com.cloudflare.global.proxy_ips`, set the max entries to `100`, leave the address family as `IPv4` (IPv6 currently not supported by this script), then in tags add the tags listed in the script. By default, these are:
+   Under `VPC`, `Managed prefix lists`, click on `Create prefix list`. Give it an intuitive name such as `com.cloudflare.global.proxy_ips`, set the max entries to `20`, leave the address family as `IPv4` (IPv6 currently not supported by this script), then in tags add the tags listed in the script. By default, these are:
 
    ```
    AutoUpdate: True
