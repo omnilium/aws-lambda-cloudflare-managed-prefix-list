@@ -21,8 +21,8 @@ An AWS Lambda function that automatically updates and manages a managed prefix l
            "logs:PutLogEvents"
          ],
          "Resource": [
-           "arn:aws:logs:eu-central-1:133871375201:log-group:*:log-stream:*",
-           "arn:aws:ec2:*:133871375201:prefix-list/*"
+           "arn:aws:logs:eu-central-1:<ACCOUNT_ID>:log-group:*:log-stream:*",
+           "arn:aws:ec2:*:<ACCOUNT_ID>:prefix-list/*"
          ]
        },
        {
@@ -35,7 +35,7 @@ An AWS Lambda function that automatically updates and manages a managed prefix l
          "Sid": "SID3",
          "Effect": "Allow",
          "Action": ["logs:CreateLogStream", "logs:CreateLogGroup"],
-         "Resource": "arn:aws:logs:eu-central-1:133871375201:log-group:*"
+         "Resource": "arn:aws:logs:eu-central-1:<ACCOUNT_ID>:log-group:*"
        }
      ]
    }
